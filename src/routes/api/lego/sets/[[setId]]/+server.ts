@@ -21,7 +21,7 @@ export const GET = async ({ params }) => {
     if (params.setId) {
         const res = await axios.get(`https://api.ducky.wiki/lego/sets/${params.setId}`, { httpsAgent: new Agent({ rejectUnauthorized: false }) });
         const res_json = res.data;
-        return json(res_json)
+        return new Response(JSON.stringify(res_json), {status: 200, headers: {'Content-Type': "application/json", ...corsHeaders}})
     } else {
         const res = await axios.get("https://api.ducky.wiki/lego/sets", { httpsAgent: new Agent({ rejectUnauthorized: false }) });
         const res_json = res.data;
@@ -33,6 +33,6 @@ export const GET = async ({ params }) => {
             console.log(toReturn)
         }
         
-        return json(toReturn)
+        return new Response(JSON.stringify(toReturn), {status: 200, headers: {'Content-Type': "application/json", ...corsHeaders}})
     }
 }
