@@ -21,8 +21,6 @@
     let track: LegacyTrack | undefined = $state();
 
     function fetchTrack() {
-        console.log("RUNNING FETCH TRACK")
-        console.log(PUBLIC_API_URL)
         fetch(`/api/nowplaying`).then((r) =>
                 r.json().then((currentTrack) => {
                     if (currentTrack.id !== null) {
