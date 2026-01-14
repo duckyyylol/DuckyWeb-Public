@@ -1,0 +1,48 @@
+:global(:root) {
+    --br: 16px;
+
+    --background-from: #BA8E29;
+    --background-to: #C7A138;
+
+    --scrollbar-color: #663a09;
+
+    --text-color: white;
+
+    --op-80: 0.8;
+    --br: 8px;
+}
+
+/* :global(*) {
+    scrollbar-width: thin !important;
+}*/
+
+:global(body) {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    color: var(--text-color);
+    background: linear-gradient(291deg, var(--background-from) 0.84%, var(--background-to) 97.84%);
+
+    overflow-y: scroll !important;
+
+}
+
+:global(a) {
+    text-decoration: none;
+    color: var(--scrollbar-color);
+}
+
+:global(a:hover) {
+    color: var(--scrollbar-color);
+}
+
+:global(::-webkit-scrollbar) {
+    background: linear-gradient(0deg, var(--background-from) 0.84%, var(--background-from) 97.84%) !important;
+    width: 0.4em;
+}
+
+:global(::-webkit-scrollbar-thumb) {
+    background: var(--scrollbar-color);
+    border-radius: var(--br);
+}

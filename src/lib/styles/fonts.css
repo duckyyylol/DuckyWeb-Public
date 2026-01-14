@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+.fira-lighter {
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 0.9em;
+}
+
+.fira-light {
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 0.9em;
+}
+
+.fira-normal {
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 0.9em;
+}
+
+.fira-semibold {
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 0.9em;
+}
+
+.fira-bold {
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 0.9em;
+}
+
+.italic {
+    font-style: italic;
+}
+
+:global(::selection) {
+    background-color: #663a09;
+    color: white;
+}
+
+.noselect {
+  user-select: none !important;
+}
+
+.sub {
+  font-size: 1em;
+  opacity: 0.8;
+}
