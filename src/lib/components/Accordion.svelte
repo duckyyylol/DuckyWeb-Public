@@ -1,8 +1,9 @@
 <script>
     import SocialEntry from "./SocialEntry.svelte";
-    import icon_Lego from "$lib/assets/icons/lego.png"
-    import icon_Music from "$lib/assets/icons/music.png"
-    import icon_Github from "$lib/assets/icons/github.png"
+    import icon_Lego from "$lib/assets/lego.png"
+    import icon_Music from "$lib/assets/music.png"
+    import icon_Github from "$lib/assets/github.png"
+    import icon_Svelte from "$lib/assets/sv_icon.png"
 
 
     import { MediaQuery } from "svelte/reactivity";
@@ -37,13 +38,13 @@
 
             <!-- <h2 class="fira-bold">my friends</h2>
             <p class="fira-normal sub italic">people that have a web presence that are also my friend :)</p> -->
-            <!-- <SocialEntry entry={{img: "/src/lib/assets/icons/the0show.webp", label: "the0show", name: "Ducky's Friends", withMention: true, url: "/travel/friends/the0show"}}/>
-            <SocialEntry entry={{img: "/src/lib/assets/icons/gloam.webp", label: "GloamEyedQueen", name: "Ducky's Friends", withMention: true, url: "/travel/friends/gloam"}}/> -->
+            <!-- <SocialEntry entry={{img: "/src/lib/assets/the0show.webp", label: "the0show", name: "Ducky's Friends", withMention: true, url: "/travel/friends/the0show"}}/>
+            <SocialEntry entry={{img: "/src/lib/assets/gloam.webp", label: "GloamEyedQueen", name: "Ducky's Friends", withMention: true, url: "/travel/friends/gloam"}}/> -->
             <br>
             <HorizontalSection align="left">
                 <p class="footer sub fira-normal italic">🦆 <a target="_blank" href="https://ducky.wiki">ducky.wiki</a> / <a target="_blank" href="https://duckyyy.lol">duckyyy.lol</a></p>
                 <p class="footer sub fira-normal italic"> | Made with </p>
-                <a target="_blank" href="https://svelte.dev"><img src="/src/lib/assets/icons/svelte.png" alt="svelte logo"></a>
+                <a target="_blank" href="https://svelte.dev"><img src={icon_Svelte} alt="svelte logo"></a>
             </HorizontalSection>
         
     </details>

@@ -1,8 +1,8 @@
-import socialIcon_Discord from "$lib/assets/icons/discord.png";
-import socialIcon_Bluesky from "$lib/assets/icons/bluesky.png";
-import socialIcon_Github from "$lib/assets/icons/github.png";
-import socialIcon_Twitch from "$lib/assets/icons/twitch.png";
-import socialIcon_Email from "$lib/assets/icons/email.png";
+import socialIcon_Discord from "$lib/assets/discord.png";
+import socialIcon_Bluesky from "$lib/assets/bluesky.png";
+import socialIcon_Github from "$lib/assets/github.png";
+import socialIcon_Twitch from "$lib/assets/twitch.png";
+import socialIcon_Email from "$lib/assets/email.png";
 
 export interface Config {
     username: string;

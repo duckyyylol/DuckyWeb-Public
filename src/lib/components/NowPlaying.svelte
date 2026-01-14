@@ -1,5 +1,5 @@
 <script lang="ts">
-    import icon_Music from "$lib/assets/icons/music.png";
+    import icon_Music from "$lib/assets/music.png";
 
     interface LegacyTrack {
         id: string;
