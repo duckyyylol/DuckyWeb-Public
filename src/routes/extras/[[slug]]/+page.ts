@@ -13,10 +13,10 @@ export interface Brickable_LegoSet {
   }
 }
 
-export const load: PageLoad = async ({params, fetch}) => {
+export const load: PageLoad = async ({params, fetch, url}) => {
   let legoSets = [];
   if(params.slug && params.slug === "lego") {
-    legoSets = await (await fetch("/api/lego/sets")).json()
+    legoSets = await (await fetch(`${url.protocol}//${url.hostname}/api/lego/sets`)).json()
   }
     
     return {
