@@ -17,6 +17,7 @@ export const load: PageLoad = async ({params, fetch, url}) => {
   let legoSets = [];
   if(params.slug && params.slug === "lego") {
     legoSets = await (await fetch(`/api/lego/sets`)).json()
+    legoSets = await Promise.all(legoSets.map(async (ls: any) => ({...ls, imagePath: (await (await fetch(`/process/set-images/${ls.id}`)).json()).path})))
   }
     
     return {

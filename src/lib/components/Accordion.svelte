@@ -32,8 +32,9 @@
     <details name="accordion">
         <summary class="fira-bold">extras</summary>
         
-            <!-- <SocialEntry entry={{img: icon_Lego, label: "Built LEGO Sets", name: "Ducky's Extras", withMention: false, url: "/extras/lego"}}/> -->
+            <SocialEntry entry={{img: icon_Lego, label: "Built LEGO Sets", name: "Ducky's Extras", withMention: false, url: "/extras/lego"}}/>
             <SocialEntry entry={{img: icon_Github, label: "Ducky Radio System", name: "Ducky's Extras", withMention: false, url: "/travel/github/radio"}}/>
+            <SocialEntry entry={{img: icon_Github, label: "duckylib Library", name: "Ducky's Extras", withMention: false, url: "/travel/github/duckylib"}}/>
             <SocialEntry entry={{img: icon_Github, label: "This Website's Source Code", name: "Ducky's Extras", withMention: false, url: "/travel/github/web"}}/>
 
             <!-- <h2 class="fira-bold">my friends</h2>

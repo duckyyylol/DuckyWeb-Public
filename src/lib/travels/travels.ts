@@ -19,6 +19,9 @@ const travels: Travels = {
             },
             "web": {
                 url: "https://github.com/duckyyylol/DuckyWeb-Public"
+            },
+            "duckylib": {
+                url: "https://github.com/duckyyylol/duckylib"
             }
         }
     },

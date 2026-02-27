@@ -10,6 +10,7 @@
     import { onMount } from "svelte";
     import { MediaQuery } from "svelte/reactivity";
     import type { Brickable_LegoSet } from "./+page.js";
+    import LegoSection from "$lib/components/LegoSection.svelte";
 
     let tabletQuery = new MediaQuery("max-width: 1000px");
     let mobileQuery = new MediaQuery("max-width: 800px");
@@ -19,13 +20,21 @@
     let scrolled: boolean = $state(false);
     let cfg: Config = $state(config);
 
+    
     let slugDict: { [key: string]: string } = {
         lego: "the little bricks are not an addiction.",
     };
-
+    
     let slug = $state((() => data.slug)());
     let legoSets: Brickable_LegoSet[] = $state([]);
-    if(slug && slug === "lego") legoSets = (() => data.legoSets)();
+    
+    switch(slug) {
+        case "lego": {
+            legoSets = (() => data.legoSets)();
+            cfg.pronouns = ["watch your step!"];
+            break;
+        }
+    }
 
     onMount(() => {
         window.onscroll = () => {
@@ -100,10 +109,9 @@
                 "left",
                 slug !== null && slugDict?.[slug] ? slugDict[slug] : null,
             )}
-            <NotFoundSection />
-            <!-- {#if slug === "lego"}
+            {#if slug === "lego"}
                 <LegoSection sets={legoSets}/>
-            {/if} -->
+            {/if}
         </HorizontalSection>
     {:else}
         <VerticalSection align="center" gap={0}>
@@ -115,10 +123,9 @@
                 slug !== null && slugDict?.[slug] ? slugDict[slug] : null,
             )}
             <hr />
-            <!-- {#if slug === "lego"}
+            {#if slug === "lego"}
                 <LegoSection sets={legoSets}/>
-            {/if} -->
-            <NotFoundSection />
+            {/if}
         </VerticalSection>
     {/if}
 </website>
