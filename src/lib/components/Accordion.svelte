@@ -4,6 +4,7 @@
     import icon_Music from "$lib/assets/music.png"
     import icon_Github from "$lib/assets/github.png"
     import icon_Svelte from "$lib/assets/sv_icon.png"
+    import icon_Discord from "$lib/assets/discord.png"
 
 
     import { MediaQuery } from "svelte/reactivity";
@@ -23,23 +24,24 @@
     <details name="accordion">
         <summary class="fira-bold">projects</summary>
         <div>
-            <p class="fira-normal">My current focus is <a target="_blank" href="/travel/towers">Elden Towers</a>, an Elden Ring-themed Discord community that hosts “towers,” which are almost their own mini servers inside of Elden Towers managed entirely by the tower’s members.</p>
-            <p class="fira-normal">I started at Elden Towers in early 2023, and since then I have aided in overhauling the entire server and building a wonderful staff team.</p>
-            <p class="fira-normal">We now provide near-daily in-game events, as well as large-scale war events streamed on <a target="_blank" href="/travel/towers/twitch">Twitch</a>.</p>
-            <p class="fira-normal">Our Tower Maiden bot provides the leaders of each tower near-full control over their portion of the Discord server.</p>
+            <p class="fira-semibold">My current focus is <a target="_blank" href="/travel/towers">Elden Towers</a>, an Elden Ring-themed Discord community that hosts “towers,” which are almost their own mini servers inside of Elden Towers managed entirely by the tower’s members.</p>
+            <p class="fira-semibold">I started at Elden Towers in early 2023, and since then I have aided in overhauling the entire server and building a wonderful staff team.</p>
+            <p class="fira-semibold">We now provide near-daily in-game events, as well as large-scale war events streamed on <a target="_blank" href="/travel/towers/twitch">Twitch</a>.</p>
+            <p class="fira-semibold">Our Tower Maiden bot provides the leaders of each tower near-full control over their portion of the Discord server.</p>
         </div>
     </details>
     <details name="accordion">
         <summary class="fira-bold">extras</summary>
         
-            <!-- <SocialEntry entry={{img: icon_Lego, label: "Built LEGO Sets", name: "Ducky's Extras", withMention: false, url: "/extras/lego"}}/> -->
-            <SocialEntry entry={{img: icon_Github, label: "Ducky Radio System", name: "Ducky's Extras", withMention: false, url: "/travel/github/radio"}}/>
-            <SocialEntry entry={{img: icon_Github, label: "duckylib Library", name: "Ducky's Extras", withMention: false, url: "/travel/github/duckylib"}}/>
-            <SocialEntry entry={{img: icon_Github, label: "This Website's Source Code", name: "Ducky's Extras", withMention: false, url: "/travel/github/web"}}/>
+        <SocialEntry entry={{img: icon_Github, label: "Ducky Radio System", name: "Ducky's Extras", withMention: false, url: "/travel/github/radio"}}/>
+        <SocialEntry entry={{img: icon_Github, label: "duckylib Library", name: "Ducky's Extras", withMention: false, url: "/travel/github/duckylib"}}/>
+        <SocialEntry entry={{img: icon_Github, label: "This Website's Source Code", name: "Ducky's Extras", withMention: false, url: "/travel/github/web"}}/>
+        <!-- <SocialEntry entry={{img: icon_Lego, label: "Built LEGO Sets", name: "Ducky's Extras", withMention: false, url: "/extras/lego"}}/> -->
+        <SocialEntry entry={{img: icon_Discord, label: "Ducky's Squad", name: "Ducky's Extras", withMention: false, url: "/travel/discord"}}/>
 
             <!-- <h2 class="fira-bold">my friends</h2>
-            <p class="fira-normal sub italic">people that have a web presence that are also my friend :)</p> -->
-            <!-- <SocialEntry entry={{img: "/src/lib/assets/the0show.webp", label: "the0show", name: "Ducky's Friends", withMention: true, url: "/travel/friends/the0show"}}/>
+            <p class="fira-normal sub italic">people that have a web presence that are also my friend :)</p>
+            <SocialEntry entry={{img: "/src/lib/assets/the0show.webp", label: "the0show", name: "Ducky's Friends", withMention: true, url: "/travel/friends/the0show"}}/>
             <SocialEntry entry={{img: "/src/lib/assets/gloam.webp", label: "GloamEyedQueen", name: "Ducky's Friends", withMention: true, url: "/travel/friends/gloam"}}/> -->
             <br>
             <HorizontalSection align="left">
@@ -104,7 +106,7 @@
     
 
     p {
-        font-size: 1.3em;
+        font-size: 1.2em;
         line-height: 1.3em !important;
     }
 

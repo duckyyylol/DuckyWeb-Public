@@ -11,6 +11,9 @@ interface Travels {
 }
 
 const travels: Travels = {
+    discord: {
+        url: "https://discord.com/invite/h3xtUWrtsg"
+    },
     github: {
         url: "https://github.com/duckyyylol",
         slugs: {

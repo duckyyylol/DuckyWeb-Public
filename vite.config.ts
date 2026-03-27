@@ -5,7 +5,7 @@ export default defineConfig({
 	plugins: [sveltekit()],
 	server: {
 		allowedHosts: [
-			"collection-dover-lamb-hook.trycloudflare.com",
+			"dev.ducky.wiki",
 			"ducky.wiki"
 		]
 	},
