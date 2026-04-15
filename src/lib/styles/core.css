@@ -10,6 +10,8 @@
 
     --op-80: 0.8;
     --br: 8px;
+
+    --text-gradient: linear-gradient(226deg, #FFEBCE -6.98%, #FFD592 93.25%);
 }
 
 /* :global(*) {

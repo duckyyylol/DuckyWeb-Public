@@ -12,6 +12,7 @@
     import type { PageProps } from "./$types.js";
     import type { Config } from "$lib/config.js";
     import config from "$lib/config.js";
+    import SetupAccordion from "$lib/components/SetupAccordion.svelte";
 
     
     let { data }: PageProps = $props();
@@ -145,7 +146,7 @@
 {#snippet otherStuff(vertical_align: "center" | "left" = "left")}
     <!-- Right side of horizontal split -->
     <VerticalSection align={vertical_align} gap={0}>
-        <SocialAccordion />
+        <SetupAccordion />
     </VerticalSection>
     <!-- END Right side of horizontal split -->
 {/snippet}
@@ -227,8 +228,8 @@
         align-items: center;
         align-content: center;
         width: 100%;
-        height: 100%;
-        overflow-y: hidden;
+        /* height: 100%; */
+        overflow-y: scroll !important;
         background: linear-gradient(
             291deg,
             var(--background-from) 0.84%,

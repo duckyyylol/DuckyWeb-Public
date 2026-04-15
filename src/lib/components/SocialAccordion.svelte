@@ -5,6 +5,7 @@
     import icon_Github from "$lib/assets/github.png"
     import icon_Svelte from "$lib/assets/sv_icon.png"
     import icon_Discord from "$lib/assets/discord.png"
+    import icon_PcCase from "$lib/assets/case.png"
 
 
     import { MediaQuery } from "svelte/reactivity";
@@ -33,11 +34,11 @@
     <details name="accordion">
         <summary class="fira-bold">extras</summary>
         
+        <SocialEntry entry={{img: icon_PcCase, label: "Ducky's Setup", name: "Ducky's Setup", withMention: false, url: "/setup"}}/>
+        <SocialEntry entry={{img: icon_Github, label: "This Website's Source Code", name: "Ducky's Extras", withMention: false, url: "/travel/github/web"}}/>
+        <SocialEntry entry={{img: icon_Discord, label: "Ducky's Squad", name: "Ducky's Extras", withMention: false, url: "/travel/discord"}}/>
         <SocialEntry entry={{img: icon_Github, label: "Ducky Radio System", name: "Ducky's Extras", withMention: false, url: "/travel/github/radio"}}/>
         <SocialEntry entry={{img: icon_Github, label: "duckylib Library", name: "Ducky's Extras", withMention: false, url: "/travel/github/duckylib"}}/>
-        <SocialEntry entry={{img: icon_Github, label: "This Website's Source Code", name: "Ducky's Extras", withMention: false, url: "/travel/github/web"}}/>
-        <!-- <SocialEntry entry={{img: icon_Lego, label: "Built LEGO Sets", name: "Ducky's Extras", withMention: false, url: "/extras/lego"}}/> -->
-        <SocialEntry entry={{img: icon_Discord, label: "Ducky's Squad", name: "Ducky's Extras", withMention: false, url: "/travel/discord"}}/>
 
             <!-- <h2 class="fira-bold">my friends</h2>
             <p class="fira-normal sub italic">people that have a web presence that are also my friend :)</p>
@@ -47,7 +48,7 @@
             <HorizontalSection align="left">
                 <p class="footer sub fira-normal italic">🦆 <a target="_blank" href="https://ducky.wiki">ducky.wiki</a> / <a target="_blank" href="https://duckyyy.lol">duckyyy.lol</a></p>
                 <p class="footer sub fira-normal italic"> | Made with </p>
-                <a target="_blank" href="https://svelte.dev"><img src={icon_Svelte} alt="svelte logo"></a>
+                <a target="_blank" class="fira-normal italic" href="https://svelte.dev"> <img src={icon_Svelte} alt="svelte logo" style="transform: rotate(20deg);"></a>
             </HorizontalSection>
         
     </details>

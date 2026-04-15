@@ -23,7 +23,7 @@
                 location.replace(`mailto:${num1 * num2}@ducky.wiki`)
             }
 
-        }} target={entry.url != "#" ? "_blank" : ""} href={entry.url ? entry.url : `/travel/${entry.name.toLowerCase()}`}>{entry.withMention ? "@" : ""}{entry.label}</a>
+        }} target={(entry.url && (entry.url?.includes("http") || entry.url.includes("/travel"))) ? "_blank" : ""} href={entry.url ? entry.url : `/travel/${entry.name.toLowerCase()}`}>{entry.withMention ? "@" : ""}{entry.label}</a>
     </p>
 </div>
 
